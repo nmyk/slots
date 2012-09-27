@@ -1,6 +1,5 @@
 import sys
 import os
-import random
 import reels 
 
 class Machine:
@@ -22,11 +21,7 @@ class Machine:
 		if self.balance <= 0:
 			self.isBroke()
 		else:
-			reelA = int(random.random()*100)
-			reelB = int(random.random()*100)
-			reelC = int(random.random()*100)
-		
-			win = reels.spin(reelA, reelB, reelC)
+			win = reels.spin()
 		
 			self.balance += self.bet * (win - 1)
 			if win > 0:

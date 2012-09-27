@@ -1,12 +1,13 @@
 import time
+import random
 
 # By changing the "pictures" on the reel, you can make the slot machine whatever theme you want. For example, reel = ['CHAT','CHIEN','ARBRE','MAISON','VILLE','MERDE'] has a French theme.
 
 reel = ['LEMON','CHERRY','ORANGE','WATERMELON','PINEAPPLE','GARBAGE']
 
-def spin(A,B,C):
+def spin():
 	reelPics = ['','','']
-	reelList = [A,B,C]
+	reelList = [int(random.random()*100), int(random.random()*100), int(random.random()*100)]
 	payout = 0
 
 # The probabilities of getting the six pictures are 30%, 25%, 15%, 10%, 5%, and 15%, respectively.
