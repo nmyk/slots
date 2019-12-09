@@ -3,7 +3,7 @@ from random import randint
 import yaml
 
 with file('reel.yaml', 'r') as reel_file:
-    reel = yaml.load(reel_file)['']
+    reel = yaml.load(reel_file)
 print reel
 
 def spin():
